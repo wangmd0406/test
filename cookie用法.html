@@ -10,10 +10,10 @@
     window.onload = function () {
         document.cookie = "userID=10000";
         document.cookie = "name1=10000";
-        document.cookie = "name2=10000";
+        //document.cookie = "name2=10000";
         document.cookie="username=John Smith; expires=Thu, 18 Dec 2019 12:00:00 GMT; path=/";
         //移除Cookie name2
-        document.cookie = "name2=1;expires=-1";
+        //document.cookie = "name2=1;expires=-1";
         alert(document.cookie);
 
 
@@ -37,7 +37,7 @@
         function removeCookie(key) {
             setCookie(key, "", -1);
         }
-
+        removeCookie("name2");
         setCookie('userID','123',600);
     }
 </script>
