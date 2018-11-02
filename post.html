@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>post</title>
+</head>
+<body>
+<div id=""></div>
+<script>
+    var xhr=new XMLHttpRequest();
+    xhr.open('POST','https://wangmd0406.github.io/test.ghl.php',true);
+    xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+    xhr.send('id=1');
+    xhr.onreadystatechange=function () {
+        if(xhr.readyState===4||xhr.status===200){
+            console.log(xhr.responseText);
+        }
+    };
+
+</script>
+</body>
+</html>
