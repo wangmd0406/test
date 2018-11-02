@@ -1,4 +1,7 @@
 <?php
 $name="wangmd";
-echo $name;
+if($POST["id"]===1)
+{
+  echo $name;
+}
 ?>
